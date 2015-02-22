@@ -1,6 +1,7 @@
 Our client is an online marketplace, here is a sample of some of the products available on our site:
 
 Product code | Name | Price
+----- | ----- | -----
 001 | Lavender heart | £9.25
 002 | Personalised cufflinks | £45.00
 003 | Kids T-shirt | £19.95
