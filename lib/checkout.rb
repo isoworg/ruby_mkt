@@ -11,6 +11,10 @@ class Checkout
     
   end
 
+  def basket
+    
+  end
+
   def total
     
   end
