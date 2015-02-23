@@ -21,7 +21,7 @@ describe 'the checkout' do
     expect(checkout.total).to equal (cufflinks.price + lavender_heart.price)
   end
 
-  context 'when there are promotions:' do
+  context 'adjusts the total when the promotions include:' do
     before { checkout.scan(lavender_heart) }
 
     it 'more than two lavender hearts reduces the item price to £8.50'

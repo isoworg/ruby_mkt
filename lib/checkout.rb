@@ -4,7 +4,7 @@ class Checkout
 
   def initialize
     @basket ||= []
-    @total ||= 0
+    @total = 0
   end
 
   def scan(item)
@@ -12,7 +12,9 @@ class Checkout
   end
 
   def total
-    @basket.each { |item| @total =+ item.price }
+    @basket.each do |item| 
+      @total += item.price
+    end
     @total
   end
 
