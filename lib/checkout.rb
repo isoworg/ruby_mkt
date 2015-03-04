@@ -12,9 +12,9 @@ class Checkout
   end
 
   def total
-    @basket.each do |item| 
-      @total += item.price
-    end
+    # this feels wrong - the basket should already 
+    # know its total instead of having to check it
+    @basket.each { |item| @total += item.price }
     @total
   end
 
