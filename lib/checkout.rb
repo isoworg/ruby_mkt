@@ -3,19 +3,20 @@ class Checkout
   attr_accessor :basket
 
   def initialize
-    @basket ||= []
-    @total = 0
+    @basket = []
   end
 
   def scan(item)
     @basket << item
   end
 
+  def cancel(item)
+    # find the item in the basket
+    # remove it
+  end
+
   def total
-    # this feels wrong - the basket should already 
-    # know its total instead of having to check it
-    @basket.each { |item| @total += item.price }
-    @total
+    @basket.map(&:price).inject(:+).round(2)
   end
 
 end
